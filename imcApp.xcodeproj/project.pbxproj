@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F622C955291D5B95007E1D47 /* Sexo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F622C954291D5B95007E1D47 /* Sexo.swift */; };
 		F63B907D291C35DB009A180D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63B907C291C35DB009A180D /* AppDelegate.swift */; };
 		F63B907F291C35DB009A180D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63B907E291C35DB009A180D /* SceneDelegate.swift */; };
 		F63B9081291C35DB009A180D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63B9080291C35DB009A180D /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F622C954291D5B95007E1D47 /* Sexo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sexo.swift; sourceTree = "<group>"; };
 		F63B9079291C35DB009A180D /* imcApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = imcApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F63B907C291C35DB009A180D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F63B907E291C35DB009A180D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				F63B907E291C35DB009A180D /* SceneDelegate.swift */,
 				F63B9080291C35DB009A180D /* ViewController.swift */,
 				F6E6EE87291C9ECF0045B0FC /* ResultViewController.swift */,
+				F622C954291D5B95007E1D47 /* Sexo.swift */,
 				F63B9082291C35DB009A180D /* Main.storyboard */,
 				F6E6EE85291C9EB30045B0FC /* resultScreen.storyboard */,
 				F6E6EE81291C8F340045B0FC /* README.md */,
@@ -151,6 +154,7 @@
 			files = (
 				F63B9081291C35DB009A180D /* ViewController.swift in Sources */,
 				F63B907D291C35DB009A180D /* AppDelegate.swift in Sources */,
+				F622C955291D5B95007E1D47 /* Sexo.swift in Sources */,
 				F63B907F291C35DB009A180D /* SceneDelegate.swift in Sources */,
 				F6E6EE88291C9ECF0045B0FC /* ResultViewController.swift in Sources */,
 			);

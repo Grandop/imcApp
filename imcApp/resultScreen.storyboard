@@ -28,7 +28,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Você está no peso ideal" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DIz-rj-7sf">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Você está no peso ideal" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DIz-rj-7sf">
                                 <rect key="frame" x="59" y="329" width="273" height="71.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
@@ -36,6 +36,10 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l0A-gu-cOX">
                                 <rect key="frame" x="145" y="476" width="100" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="6kK-B8-YVU"/>
+                                    <constraint firstAttribute="height" constant="41" id="q99-Ft-hDx"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Voltar">
                                     <backgroundConfiguration key="background" cornerRadius="15">
@@ -48,7 +52,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="DIz-rj-7sf" firstAttribute="top" secondItem="hFF-cg-AZc" secondAttribute="bottom" constant="87" id="5fg-wa-MP8"/>
                             <constraint firstItem="vpT-BQ-6f6" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="5yn-ib-sLw"/>
@@ -65,6 +69,10 @@
                             <constraint firstItem="vpT-BQ-6f6" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="36" id="csE-pT-Kss"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imcValueLabel" destination="hFF-cg-AZc" id="3qg-ch-yiT"/>
+                        <outlet property="messageWarningLabel" destination="DIz-rj-7sf" id="EPc-CV-MO5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -72,7 +80,7 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
+        <systemColor name="secondarySystemGroupedBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>

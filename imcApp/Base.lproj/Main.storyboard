@@ -173,7 +173,7 @@
                                                             <segment title="Feminino"/>
                                                         </segments>
                                                         <connections>
-                                                            <action selector="choosingSex:" destination="BYZ-38-t0r" eventType="valueChanged" id="FAu-vI-ok5"/>
+                                                            <action selector="choosingSex:" destination="BYZ-38-t0r" eventType="valueChanged" id="7Bi-ly-DyH"/>
                                                         </connections>
                                                     </segmentedControl>
                                                 </subviews>
@@ -225,6 +225,8 @@
                     <connections>
                         <outlet property="labelHeight" destination="eU9-oS-lT0" id="yFq-UU-CgL"/>
                         <outlet property="labelWeight" destination="m8F-w1-aUO" id="ZEB-nv-5en"/>
+                        <outlet property="sliderHeight" destination="Ncp-Zn-VsG" id="lvj-Yp-FyR"/>
+                        <outlet property="sliderWeight" destination="e1M-kR-d1r" id="BCd-jx-mpb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
