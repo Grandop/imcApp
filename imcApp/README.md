@@ -33,7 +33,7 @@
    
    Na view que aparecerá depois:
 
-   @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var imageView: UIImageView!
     
     var image: UIImage?
     var contentStyle: UIView.ContentMode?
