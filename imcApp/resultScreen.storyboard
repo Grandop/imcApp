@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Result View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ResultViewController" id="Y6W-OH-hqX" customClass="ResultViewController" customModule="imcApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seu IMC é de" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vpT-BQ-6f6">
+                                <rect key="frame" x="16" y="83" width="358" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22.5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFF-cg-AZc">
+                                <rect key="frame" x="16" y="212" width="358" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Você está no peso ideal" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DIz-rj-7sf">
+                                <rect key="frame" x="59" y="329" width="273" height="71.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l0A-gu-cOX">
+                                <rect key="frame" x="145" y="476" width="100" height="41"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button">
+                                    <backgroundConfiguration key="background" cornerRadius="15">
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DIz-rj-7sf" firstAttribute="top" secondItem="hFF-cg-AZc" secondAttribute="bottom" constant="87" id="5fg-wa-MP8"/>
+                            <constraint firstItem="vpT-BQ-6f6" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="5yn-ib-sLw"/>
+                            <constraint firstItem="DIz-rj-7sf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="59" id="Efr-AY-iGS"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="l0A-gu-cOX" secondAttribute="bottom" constant="293" id="Fmo-cr-oyL"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="l0A-gu-cOX" secondAttribute="trailing" constant="145" id="Gee-c4-5yn"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="hFF-cg-AZc" secondAttribute="trailing" constant="16" id="JjE-Py-FUV"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="vpT-BQ-6f6" secondAttribute="trailing" constant="16" id="OWB-Rh-XQc"/>
+                            <constraint firstItem="hFF-cg-AZc" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="TMI-hJ-NW1"/>
+                            <constraint firstItem="hFF-cg-AZc" firstAttribute="top" secondItem="vpT-BQ-6f6" secondAttribute="bottom" constant="93" id="YYL-7K-7Se"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="DIz-rj-7sf" secondAttribute="trailing" constant="58" id="ZVN-L6-qL4"/>
+                            <constraint firstItem="l0A-gu-cOX" firstAttribute="top" secondItem="DIz-rj-7sf" secondAttribute="bottom" constant="75.329999999999998" id="cM0-d6-19A"/>
+                            <constraint firstItem="l0A-gu-cOX" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="145" id="cNu-Zd-eYb"/>
+                            <constraint firstItem="vpT-BQ-6f6" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="36" id="csE-pT-Kss"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.692307692307693" y="-2.1327014218009479"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
