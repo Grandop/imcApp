@@ -36,12 +36,10 @@ class ViewController: UIViewController {
         
     }
     
-    
     @IBAction func sliderWeight(_ sender: UISlider) {
         let sliderWeightValue = Int(sender.value)
         labelWeight.text = "\(String(sliderWeightValue))kg"
     }
-    
     
     @IBAction func choosingSex(_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0 {
@@ -72,7 +70,6 @@ class ViewController: UIViewController {
         resultViewController.imcValue = String(imc)
         resultViewController.messageWarning = message
         
-        
         self.present(resultViewController, animated: true)
     }
     
@@ -94,7 +91,7 @@ class ViewController: UIViewController {
                 background = .yellow
             case 27.9...31.1:
                 message = "Você está acima do peso"
-                background = .red
+                background = .orange
             case 31.2...:
                 message = "Você está obeso"
                 background = .red
@@ -114,7 +111,7 @@ class ViewController: UIViewController {
                 background = .yellow
             case 27.4...32.3:
                 message = "Você está acima do peso"
-                background = .red
+                background = .orange
             case 32.4...:
                 message = "Você está obeso"
                 background = .red
